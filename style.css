@@ -1,0 +1,47 @@
+body{
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+
+}
+.logo{
+    
+    animation-name: dvd;
+    position: absolute;
+    display: block;
+    left: 0px;
+    top: 340px;
+    animation-duration: 12s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+svg{
+    display: block;
+}
+.DVD svg{
+    fill: blue;
+}
+@keyframes dvd{
+    0%{
+        fill: violet;
+        transform: translate(0px,0px);
+    }
+    25%{
+        fill: orange;
+        transform: translate(300px,200px);
+    }
+    50%{
+        fill: red;
+        transform: translate(1050px,0px);
+    }
+    75%{
+        fill: green;
+        transform: translate(356px,-350px);
+    }
+    100%{
+        fill: blue;
+        transform: translate(0px,0px);
+    }
+}
